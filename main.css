@@ -1,0 +1,147 @@
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+}
+
+body {
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+
+.btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: 0;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+}
+
+.main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+}
+
+.main-nav a:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+
+/* top container */
+
+.top-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'showcase showcase top-box-a' 'showcase showcase top-box-b';
+}
+
+
+/* showcase */
+
+
+/* add picture instead of colour */
+
+.showcase {
+    grid-area: showcase;
+    min-height: 400px;
+    background-color: antiquewhite;
+    /* background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Horse-Before-the-Chariot_0.jpg") background-size: auto; */
+    background-position: center;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+    font-size: 4rem;
+    margin-bottom: 0;
+    color: black;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+    margin-top: 0;
+    color: black;
+}
+
+
+/* top box */
+
+.top-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.top-box-a {
+    grid-area: top-box-a;
+}
+
+
+/* .top-box-b {
+    grid-area: top-box-b;
+}
+
+.top-box-c {
+    grid-area: top-box-c;
+}
+
+.top-box-d {
+    grid-area: top-box-d;
+}
+
+.top-box-e {
+    grid-area: top-box-e;
+}
+
+.top-box-f {
+    grid-area: top-box-f;
+}
+
+.top-box-g {
+    grid-area: top-box-g; 
+}   */
+
+.bottom-box {
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
